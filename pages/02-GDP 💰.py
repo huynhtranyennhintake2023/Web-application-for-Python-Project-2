@@ -52,35 +52,10 @@ st.plotly_chart(fig2, theme = "streamlit", use_container_width=True)
 
 code = '''
 import streamlit as st
-
-from streamlit_space import space
 import plotly.express as px
 import pandas as pd
 import numpy as np
 import datetime
-
-bgr_img ="""
-<style>
-[data-testid="stAppViewContainer"]
-{
-background-image: url("https://i.postimg.cc/4d4pXvdy/growth-economy-with-coins-concept.jpg");
-background-size:cover;
-}
-
-[data-testid="stHeader"]
-{
-background-color: rgba(0,0,0,0);
-}
-
-[data-testid="stSidebar"]
-{
-background-color: rgba(0,0,0,0);
-}
-</style>
-"""
-st.markdown(bgr_img,unsafe_allow_html= True)
-
-
 
 df = px.data.gapminder()
 
