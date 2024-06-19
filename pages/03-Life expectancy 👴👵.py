@@ -57,7 +57,7 @@ fig3.update_layout(font_family="Courier New",font = dict (size = 50))
 #fig3 = px.line(df3, x='year', y='lifeExp',color='country', labels={'year':'Year', 'lifeExp':'Life expectancy', 'country':'Country'} )
 st.plotly_chart(fig3)
 
-st.header("***Are you curious about the code to draw this plot?***")
+st.header(":green[Are you curious about the code to draw this plot?]")
 expander = st.expander("**Click this box**") 
 expander.write ('''
 import streamlit as st

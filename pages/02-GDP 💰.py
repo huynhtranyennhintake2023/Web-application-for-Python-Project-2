@@ -50,7 +50,7 @@ fig2.update_layout(font_family="Courier New",font = dict (size = 20))
     
 st.plotly_chart(fig2, theme = "streamlit", use_container_width=True)
 
-st.header("***Are you curious about the code to draw this plot?***")
+st.header(":blue[Are you curious about the code to draw this plot?]")
 expander = st.expander("**Click this box**") 
 expander.write ('''
 import streamlit as st
