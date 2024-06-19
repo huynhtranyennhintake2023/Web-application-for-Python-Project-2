@@ -105,21 +105,20 @@ import streamlit as st
 
 df = px.data.gapminder()
 
-option1 = st.selectbox('**Please choose a continent:**',
-('Asia', 'Africa', 'Europe','Americas','Oceania'))
+\n option1 = st.selectbox('**Please choose a continent:**',('Asia', 'Africa', 'Europe','Americas','Oceania'))
 \n st.caption(f"You selected: {option1}")
 \n sub1= df[(df["continent"]==option1)]
 \n df1 = sub1.loc[:,['year','pop', 'country', 'iso_alpha']]
 
-years = df['year'].unique()
-selected_year = st.selectbox('**Choose a country:**', years)
+\n years = df['year'].unique()
+\n selected_year = st.selectbox('**Choose a country:**', years)
 
-sub1a =df[(df['year'] == selected_year)]
+\n sub1a =df[(df['year'] == selected_year)]
 
-df1a = sub1a.loc[:,['pop', 'country', 'year']]
+\n df1a = sub1a.loc[:,['pop', 'country', 'year']]
 
-df1b = df1a.merge(df1, how = 'inner')
-fig1 = px.bar(df1b, x = 'country', y = 'pop', color = 'country', 
+\n df1b = df1a.merge(df1, how = 'inner')
+\n fig1 = px.bar(df1b, x = 'country', y = 'pop', color = 'country', 
                 labels = {'pop':'Population', 'country':'Country', 'pop_y':'Population'}, width = 950, height = 600, text = 'pop')
 
 \n fig1.update_traces(texttemplate='%{text:.3s}', textposition='outside')
@@ -128,34 +127,34 @@ fig1 = px.bar(df1b, x = 'country', y = 'pop', color = 'country',
 
 \n st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)
 
-st.markdown("---")
+\n st.markdown("---")
 
-df1b['continent_population'] = df1b['pop'].sum()
-df1b['pop_percentage'] = (df1b['pop']/df1b['continent_population'])*100
-df1b['per_sum'] = df1b['pop_percentage'].sum()
-df1b['per_other'] = df1b['per_sum'] - df1b['pop_percentage']
+\n df1b['continent_population'] = df1b['pop'].sum()
+\n df1b['pop_percentage'] = (df1b['pop']/df1b['continent_population'])*100
+\n df1b['per_sum'] = df1b['pop_percentage'].sum()
+\n df1b['per_other'] = df1b['per_sum'] - df1b['pop_percentage']
 
-countries = df1b['country'].unique()
-selected_country = st.selectbox('Choose a country:', countries)
-sub1c =df1b[(df1b['country'] == selected_country)]
-df1c = sub1c.loc[:,['pop', 'country', 'year', 'continent']]
-df1d = df1c.merge(df1b, how = 'outer')
-df1e = df1c.merge(df1b, how = 'inner')
-def country_class(value):
+\ncountries = df1b['country'].unique()
+\n selected_country = st.selectbox('Choose a country:', countries)
+\n sub1c =df1b[(df1b['country'] == selected_country)]
+\n df1c = sub1c.loc[:,['pop', 'country', 'year', 'continent']]
+\n df1d = df1c.merge(df1b, how = 'outer')
+\n df1e = df1c.merge(df1b, how = 'inner')
+\n def country_class(value):
        if value == selected_country:
             return selected_country
        if value != selected_country:
             return 'Others'
 
-df1d['country2'] = df1d['country'].map(country_class)
-df1d = df1d.groupby("country2").sum()
-df1d['country2'] = df1d['country'].map(country_class)    
+\n df1d['country2'] = df1d['country'].map(country_class)
+\n df1d = df1d.groupby("country2").sum()
+\n df1d['country2'] = df1d['country'].map(country_class)    
     
-fig1b = px.pie(df1d, values = "pop", names = "country2", width = 800, hole = .3, opacity = 0.8, template='gridon')
+\n fig1b = px.pie(df1d, values = "pop", names = "country2", width = 800, hole = .3, opacity = 0.8, template='gridon')
     
-fig1b.update_layout(uniformtext_minsize=8, xaxis_tickangle=45, showlegend = True)
-fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', width=2)))
-fig1b.update_traces(pull=0.05)
-st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)''')
+\n fig1b.update_layout(uniformtext_minsize=8, xaxis_tickangle=45, showlegend = True)
+\n fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', width=2)))
+\n fig1b.update_traces(pull=0.05)
+\n st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)''')
 
 

@@ -54,28 +54,27 @@ st.header(":blue[Are you curious about the code to draw this plot?]")
 expander = st.expander("**Click this box**") 
 expander.write ('''
 import streamlit as st
-import plotly.express as px
-import pandas as pd
-import numpy as np
-import datetime
+\nimport plotly.express as px
+\nimport pandas as pd
+\nimport numpy as np
+\nimport datetime
 
-df = px.data.gapminder()
+\ndf = px.data.gapminder()
 
-custom_color_scale = px.colors.qualitative.Pastel[:len(df)] 
-fig2 = px.choropleth(df, locations='iso_alpha', color='gdpPercap', hover_name='country',
+\ncustom_color_scale = px.colors.qualitative.Pastel[:len(df)] 
+\nfig2 = px.choropleth(df, locations='iso_alpha', color='gdpPercap', hover_name='country',
                     projection='natural earth', animation_frame='year',width = 700, height = 800,
                     color_continuous_scale="Rainbow", color_discrete_sequence=custom_color_scale,
                     labels = {'gdpPercap':'GDP per capita'}                    )
-fig2.update_traces(marker_line_width = 0.7, marker_line_color = 'white')
-fig2.update_geos(resolution=50,
-showcoastlines=True, coastlinecolor="Gray",
+\nfig2.update_traces(marker_line_width = 0.7, marker_line_color = 'white')
+\nfig2.update_geos(resolution=50, showcoastlines=True, coastlinecolor="Gray",
 showland=True, landcolor="LightGrey",
 showocean=True, oceancolor="LightBlue")
 
-sliders = [dict(currentvalue={"prefix": "Year = "})]
+\nsliders = [dict(currentvalue={"prefix": "Year = "})]
 
-fig2.update_layout(sliders=sliders)
-fig2.update_layout(font_family="Courier New",font = dict (size = 20))
+\nfig2.update_layout(sliders=sliders)
+\nfig2.update_layout(font_family="Courier New",font = dict (size = 20))
     
-st.plotly_chart(fig2, theme = "streamlit", use_container_width=True)''')
+\nst.plotly_chart(fig2, theme = "streamlit", use_container_width=True)''')
 
