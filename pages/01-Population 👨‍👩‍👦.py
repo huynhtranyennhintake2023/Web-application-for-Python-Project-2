@@ -93,8 +93,9 @@ fig1b.update_layout(uniformtext_minsize=8, xaxis_tickangle=45, showlegend = True
 fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', width=2)))
 fig1b.update_traces(pull=0.05)
 st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)
-
-code = ''' 
+ 
+expander = st.expander("Are you curious about the code to draw this plot?") 
+expander.write ('''
 import streamlit as st
 import plotly.express as px
 import pandas as pd
@@ -159,7 +160,6 @@ fig1b = px.pie(df1d, values = "pop", names = "country2", width = 800, hole = .3,
 fig1b.update_layout(uniformtext_minsize=8, xaxis_tickangle=45, showlegend = True)
 fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', width=2)))
 fig1b.update_traces(pull=0.05)
-st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)'''
+st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)''')
 
-st.code(code, language='python')
 
