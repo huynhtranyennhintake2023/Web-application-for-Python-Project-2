@@ -27,7 +27,7 @@ st.markdown(bgr_img,unsafe_allow_html= True)
 df = px.data.gapminder()
 
 st.title(":red[Population]")
-st.write("In this page, users can see each country population in 1 continent in the bar chart and its distribution to the continent total population in the pie chart.")
+st.write("In this page, users can see each country population in 1 continent in the bar chart.")
 
 
 st.markdown("---")
@@ -58,6 +58,9 @@ fig1.update_layout(font_family="Courier New",font = dict (size = 18))
 st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)
 
 st.markdown("---")
+
+st.subheader("Wanna see the country distribution to the continent total population in the pie chart?")
+st.subheader("Check the graph below 👇")
 
 df1b['continent_population'] = df1b['pop'].sum()
 df1b['pop_percentage'] = (df1b['pop']/df1b['continent_population'])*100
