@@ -98,18 +98,18 @@ st.header(":red[Are you curious about the code to draw these plots?]")
 expander = st.expander("***Click this box***")  
 expander.write ('''
 import streamlit as st
-import plotly.express as px
-import pandas as pd
-import numpy as np
-import datetime
+\n import plotly.express as px
+\n import pandas as pd
+\n import numpy as np
+\n import datetime
 
 df = px.data.gapminder()
 
 option1 = st.selectbox('**Please choose a continent:**',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))
-st.caption(f"You selected: {option1}")
-sub1= df[(df["continent"]==option1)]
-df1 = sub1.loc[:,['year','pop', 'country', 'iso_alpha']]
+\n st.caption(f"You selected: {option1}")
+\n sub1= df[(df["continent"]==option1)]
+\n df1 = sub1.loc[:,['year','pop', 'country', 'iso_alpha']]
 
 years = df['year'].unique()
 selected_year = st.selectbox('**Choose a country:**', years)
@@ -122,11 +122,11 @@ df1b = df1a.merge(df1, how = 'inner')
 fig1 = px.bar(df1b, x = 'country', y = 'pop', color = 'country', 
                 labels = {'pop':'Population', 'country':'Country', 'pop_y':'Population'}, width = 950, height = 600, text = 'pop')
 
-fig1.update_traces(texttemplate='%{text:.3s}', textposition='outside')
-fig1.update_layout(uniformtext_minsize=6, xaxis_tickangle=45, showlegend = False)
-fig1.update_layout(font_family="Courier New",font = dict (size = 18))
+\n fig1.update_traces(texttemplate='%{text:.3s}', textposition='outside')
+\n fig1.update_layout(uniformtext_minsize=6, xaxis_tickangle=45, showlegend = False)
+\n fig1.update_layout(font_family="Courier New",font = dict (size = 18))
 
-st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)
+\n st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)
 
 st.markdown("---")
 
