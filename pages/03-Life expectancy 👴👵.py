@@ -57,7 +57,8 @@ fig3.update_layout(font_family="Courier New",font = dict (size = 50))
 #fig3 = px.line(df3, x='year', y='lifeExp',color='country', labels={'year':'Year', 'lifeExp':'Life expectancy', 'country':'Country'} )
 st.plotly_chart(fig3)
 
-code = '''
+expander = st.expander("***Are you curious about the code to draw these plots?***") 
+expander.write ('''
 import streamlit as st
 import plotly.express as px
 import pandas as pd
@@ -90,5 +91,4 @@ df6 = df4.merge(sub4, how = 'inner', on = 'country')
 fig3 = px.line(df6, x='year_x', y='lifeExp_x',color='country', 
                 labels={'year_x':'Year', 'lifeExp_x':'Life expectancy', 'country':'Country'}
                 , width = 900, height = 600 )
-fig3.update_layout(font_family="Courier New",font = dict (size = 50))'''
-st.code(code, language='python')
+fig3.update_layout(font_family="Courier New",font = dict (size = 50))''')
