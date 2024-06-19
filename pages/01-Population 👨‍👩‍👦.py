@@ -94,7 +94,7 @@ fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', wid
 fig1b.update_traces(pull=0.05)
 st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)
  
-st.header("***Are you curious about the code to draw these plots?***")
+st.header("**Are you curious about the code to draw these plots?**")
 expander = st.expander("***Click this box***")  
 expander.write ('''
 import streamlit as st
