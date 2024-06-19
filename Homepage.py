@@ -7,22 +7,7 @@ import datetime
 
 st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
 st.balloons()
-#expander = st.expander('What is this?')
-#expander.write("""
-#This web app (run by Python 🐍 + Streamlit 🎈) serves as an illustration for an Interactive Web Application for Python Project 2.
 
-#It allows users to view population, GDP per capita and life expectancy of 1xx countries around the world 🌍 from :blue[1952] to :blue[2007] by interacting with the plots.
-
-#Spend some time exploring this web application and have some fun.
-
-
-#   Personal information:
-    
-#    \n :orange[Vietnamese-German University]
-#    \n Author: Huỳnh Trần Yến Nhi
-#    \n Major: Business Administration (Betriebswirtschaftslehre)
-#    \n Intake: 2023""")
-#st.write("🗓️: ", datetime.date(2024, 5, 16))
 st.header("What is this❓")
 st.write("This website is :blue[**a web application**].")
 expander1 = st.expander("What is a web application?")
@@ -34,7 +19,7 @@ st.header("What is this web application used for❓")
 st.write("This web app or web application is used for my second project in Python class. With this web application, users can analyze the 🔗[gapminder](https://plotly.github.io/datasets/) dataset available in the 🔗[plotly.express](https://plotly.com/python/plotly-express/) package.")
 expander2 = st.expander("What is a dataset?")
 expander2.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
-expander3 = st.expander("What is the 🔗[gapminder](https://plotly.github.io/datasets/) dataset available in the 🔗[plotly.express](https://plotly.com/python/plotly-express/) package?")
+expander3 = st.expander("What is the [gapminder](https://plotly.github.io/datasets/) dataset available in the [plotly.express](https://plotly.com/python/plotly-express/) package?")
 expander3.write("""This is a data frame with 1,704 observations on 8 variables. This dataset shows population, GDP per capita and life expectancy of 142 countries around the 🌍 from :blue[1952] to :blue[2007]. 
                 \n For more information, please click on what you want to know which stand next to the symbol 🔗""")
 expander4 = st.expander("Who am I?")
