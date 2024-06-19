@@ -115,7 +115,7 @@ fig1.update_traces(texttemplate='%{text:.3s}', textposition='outside')
 fig1.update_layout(uniformtext_minsize=6, xaxis_tickangle=45, showlegend = False)
 fig1.update_layout(font_family="Courier New",font = dict (size = 18))
 #fig1.update_traces(textfont_size=12, textangle=45,marker_line_width = 1, marker_line_color = 'white')
-st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)'''
+st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)
 
 st.markdown("---")
 
@@ -152,7 +152,7 @@ fig1b = px.pie(df1d, values = "pop", names = "country2", width = 800, hole = .3,
 fig1b.update_layout(uniformtext_minsize=8, xaxis_tickangle=45, showlegend = True)
 fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', width=2)))
 fig1b.update_traces(pull=0.05)
-st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)
+st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)'''
 
 st.code(code, language='python')
 
