@@ -27,9 +27,8 @@ st.markdown(bgr_img,unsafe_allow_html= True)
 df = px.data.gapminder()
 
 st.title(":red[Population]")
-st.text_input("\textsf\Large In this page, users can see each country population in 1 continent in the bar chart and its distribution to the continent total population in the pie chart. ")
-st.write("""In this page, users can see each country population in 1 continent in the bar chart and its distribution to the continent total population in the pie chart.
-        """)
+st.text_input("In this page, users can see each country population in 1 continent in the bar chart and its distribution to the continent total population in the pie chart. ")
+
 
 st.markdown("---")
 
