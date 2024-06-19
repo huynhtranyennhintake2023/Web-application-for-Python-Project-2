@@ -61,11 +61,6 @@ import datetime
 
 df = px.data.gapminder()
 
-st.title("GDP")
-st.write("In this page, users can see changes of each country GDP during the period from 1952 to 2007 by adjusting the slider or clicking on the button ▶️.")
-
-st.markdown("---")
-
 custom_color_scale = px.colors.qualitative.Pastel[:len(df)] 
 fig2 = px.choropleth(df, locations='iso_alpha', color='gdpPercap', hover_name='country',
                     projection='natural earth', animation_frame='year',width = 700, height = 800,

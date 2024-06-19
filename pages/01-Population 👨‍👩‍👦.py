@@ -105,11 +105,6 @@ import datetime
 
 df = px.data.gapminder()
 
-st.title(':white[Population]')
-st.write("In this page, users can see each country population in 1 continent in the bar chart and its distribution to the continent total population in the pie chart.")
-
-st.markdown("---")
-
 option1 = st.selectbox('**Please choose a continent:**',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))
 st.caption(f"You selected: {option1}")

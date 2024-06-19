@@ -68,9 +68,6 @@ import datetime
 
 df = px.data.gapminder()
 
-st.title("Life expectancy")
-st.write("In this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.")
-
 option = st.selectbox('**Please choose one continent:**',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))
 st.caption(f"You selected: {option}")
