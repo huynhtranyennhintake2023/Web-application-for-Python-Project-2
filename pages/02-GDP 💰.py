@@ -23,6 +23,7 @@ background-color: rgba(0,0,0,0);
 }
 </style>
 """
+st.markdown(bgr_img,unsafe_allow_html= True)
 
 df = px.data.gapminder()
 
