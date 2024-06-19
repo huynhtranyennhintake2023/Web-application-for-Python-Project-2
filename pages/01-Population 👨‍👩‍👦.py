@@ -20,8 +20,7 @@ background-color: rgba(0,0,0,0);
 }
 </style>
 """
-st.set_page_config(layout="wide")
-st.balloons()
+
 
 st.markdown(bgr_img,unsafe_allow_html= True)
 
