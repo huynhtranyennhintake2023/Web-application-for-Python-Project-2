@@ -59,7 +59,7 @@ st.plotly_chart(fig1, theme = "streamlit", use_container_width=True)
 
 st.markdown("---")
 
-st.subheader("Wanna see the country distribution to the continent total population in the pie chart?")
+st.subheader("Wanna see one country distribution to the continent total population?")
 st.subheader("Check the graph below 👇")
 
 df1b['continent_population'] = df1b['pop'].sum()
