@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 import datetime
-import time
+
 
 st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
 st.balloons()
