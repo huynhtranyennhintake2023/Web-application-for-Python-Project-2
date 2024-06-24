@@ -24,6 +24,7 @@ background-color: rgba(0,0,0,0);
 </style>
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
+st.divider()
 
 st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
 st.balloons()
@@ -48,7 +49,7 @@ with tab1:
     expander4 = st.expander("Who am I?")
     expander4.write("My name is Huỳnh Trần Yến Nhi. I'm a freshman from :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.")
 
-#st.divider()
+
 
 with tab2: 
     df = px.data.gapminder()
