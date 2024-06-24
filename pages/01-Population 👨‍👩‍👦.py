@@ -98,7 +98,7 @@ fig1b.update_traces(pull=0.05)
 st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)
  
 st.header(":red[Are you curious about the code to draw these plots?]")
-expander = st.expander("***Click this box***")  
+expander = st.expander("Click this box")  
 expander.write ('''
 import streamlit as st
 \n import plotly.express as px
