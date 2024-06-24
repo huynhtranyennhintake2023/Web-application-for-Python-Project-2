@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 import datetime
-import streamlit_lottie as st_lottie
+import streamlit_lottie as lottie
 st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
 st.balloons()
 
@@ -52,7 +52,7 @@ with tab1:
 
     with col2:
         st.lottie("http://www.fanpop.com/clubs/penguins-of-madagascar/images/37800672/title/hello-photo")
-        
+
 
 with tab2: 
     df = px.data.gapminder()
