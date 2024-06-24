@@ -37,21 +37,23 @@ with tab1:
         st.header("What is this❓")
         st.write("This website is :blue[**a web application**]. A web application is a software that runs in an Internet browser. Any website implying interactive elements can be called a web app. This means that the user can interact with the platform by pressing buttons, filling out forms, requesting a price or making purchases. Similar to desktop computer software or a mobile application, a web app provides a user interface, offers utility or entertainment, and the ability to access, create, store, or modify data.")
 
+    with col2:
+        st.lottie("http://www.fanpop.com/clubs/penguins-of-madagascar/images/37800672/title/hello-photo", key = "hello")
+
+
+    st.markdown("---")
+
+    st.header("What is this web application used for❓")
+    st.write("This web app or web application is used for my second project in Python class. With this web application, users can analyze the 🔗[gapminder](https://plotly.github.io/datasets/) dataset available in the 🔗[plotly.express](https://plotly.com/python/plotly-express/) package.")
+    expander2 = st.expander("What is a dataset?")
+    expander2.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
     
-        st.markdown("---")
+    st.markdown("---")
 
-        st.header("What is this web application used for❓")
-        st.write("This web app or web application is used for my second project in Python class. With this web application, users can analyze the 🔗[gapminder](https://plotly.github.io/datasets/) dataset available in the 🔗[plotly.express](https://plotly.com/python/plotly-express/) package.")
-        expander2 = st.expander("What is a dataset?")
-        expander2.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
+    st.header("Who am I?")
+    st.write("My name is Huỳnh Trần Yến Nhi. I'm a freshman from :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.")
+
     
-        st.markdown("---")
-
-        st.header("Who am I?")
-        st.write("My name is Huỳnh Trần Yến Nhi. I'm a freshman from :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.")
-
-    #with col2:
-        #st.lottie("http://www.fanpop.com/clubs/penguins-of-madagascar/images/37800672/title/hello-photo", key = "hello")
 
 
 with tab2: 
