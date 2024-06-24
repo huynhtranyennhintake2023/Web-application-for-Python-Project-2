@@ -29,7 +29,7 @@ background-color: rgba(0,0,0,0);
 st.markdown(bgr_img,unsafe_allow_html= True)
 st.divider()
 
-tab1, tab2 = st.tab("General information", "Gapminder dataset")
+tab1, tab2 = st.tab(["General information", "Gapminder dataset"])
 
 with tab1:
     st.header("What is this❓")
