@@ -52,7 +52,7 @@ with tab1:
 
     with col2:
         st.lottie("http://www.fanpop.com/clubs/penguins-of-madagascar/images/37800672/title/hello-photo")
-
+        
 
 with tab2: 
     df = px.data.gapminder()
