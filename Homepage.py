@@ -50,9 +50,7 @@ with tab1:
     st.header("Who am I?")
     st.write("My name is Huỳnh Trần Yến Nhi. I'm a freshman from :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.")
 
-    
-
-
+  
 with tab2: 
     df = px.data.gapminder()
 
