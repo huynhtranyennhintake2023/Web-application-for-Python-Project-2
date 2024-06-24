@@ -52,7 +52,7 @@ with tab2:
 
     st.header("📌 Gapminder dataset")
     st.write("""This is a data frame with 1,704 observations on 8 variables. This dataset shows population, GDP per capita and life expectancy of 142 countries around the 🌍 from :blue[1952] to :blue[2007]. 
-                \n For more information, please click on what you want to know which stand next to the symbol 🔗""")
+                \n If you want to know more about this 🔗[gapminder](https://plotly.github.io/datasets/) dataset or 🔗[plotly.express](https://plotly.com/python/plotly-express/) package, please click on it. """)
     st.dataframe(df, width = 1000)
 
     st.markdown(
