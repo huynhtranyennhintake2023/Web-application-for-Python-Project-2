@@ -28,7 +28,7 @@ st.markdown(bgr_img,unsafe_allow_html= True)
 df = px.data.gapminder()
 
 st.title(":blue[GDP]")
-st.write("In this page, users can see changes of each country GDP during the period from 1952 to 2007 by adjusting the slider or clicking on the button ▶️.")
+st.write("On this page, users can see changes of each country GDP during the period from 1952 to 2007 by adjusting the slider or clicking on the button ▶️.")
 
 st.markdown("---")
 

@@ -28,7 +28,7 @@ st.markdown(bgr_img,unsafe_allow_html= True)
 df = px.data.gapminder()
 
 st.title(":green[Life expectancy]")
-st.write("In this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.")
+st.write("On this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.")
 
 option = st.selectbox('**Please choose one continent:**',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))
