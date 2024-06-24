@@ -50,7 +50,7 @@ with tab1:
 
 #st.divider()
 
-    with tab2: 
+with tab2: 
     df = px.data.gapminder()
 
     st.header("📌 Gapminder dataset")
