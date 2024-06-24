@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 import datetime
 
+st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
+st.balloons()
+
 bgr_img ="""
 <style>
 [data-testid="stAppViewContainer"]
@@ -25,9 +28,6 @@ background-color: rgba(0,0,0,0);
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
 st.divider()
-
-st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
-st.balloons()
 
 tab1, tab2 = st.tab("General information", "Gapminder dataset")
 
