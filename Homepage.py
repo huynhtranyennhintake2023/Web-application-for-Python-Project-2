@@ -33,10 +33,9 @@ tab1, tab2 = st.tabs(["General information", "Gapminder dataset"])
 
 with tab1:
     st.header("What is this❓")
-    st.write("This website is :blue[**a web application**].")
-    expander1 = st.expander("What is a web application?")
-    expander1.write("""A web application is a software that runs in an Internet browser. Any website implying interactive elements can be called a web app. This means that the user can interact with the platform by pressing buttons, filling out forms, requesting a price or making purchases. Similar to desktop computer software or a mobile application, a web app provides a user interface, offers utility or entertainment, and the ability to access, create, store, or modify data.""")
+    st.write("This website is :blue[**a web application**]. A web application is a software that runs in an Internet browser. Any website implying interactive elements can be called a web app. This means that the user can interact with the platform by pressing buttons, filling out forms, requesting a price or making purchases. Similar to desktop computer software or a mobile application, a web app provides a user interface, offers utility or entertainment, and the ability to access, create, store, or modify data.")
 
+    
     st.markdown("---")
 
     st.header("What is this web application used for❓")
