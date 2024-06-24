@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 import datetime
-#import streamlit_lottie as st_lottie
+
 st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
 st.balloons()
 
@@ -36,9 +36,6 @@ with tab1:
     with col1:
         st.header("What is this❓")
         st.write("This website is :blue[**a web application**]. A web application is a software that runs in an Internet browser. Any website implying interactive elements can be called a web app. This means that the user can interact with the platform by pressing buttons, filling out forms, requesting a price or making purchases. Similar to desktop computer software or a mobile application, a web app provides a user interface, offers utility or entertainment, and the ability to access, create, store, or modify data.")
-
-    #with col2:
-    #    st.lottie("https://lottie.host/9753f85c-436e-4cbb-8d51-3c6403b4acf0/ehnNdKGCza.json")
 
 
     st.markdown("---")
