@@ -42,9 +42,6 @@ with tab1:
     st.write("This web app or web application is used for my second project in Python class. With this web application, users can analyze the 🔗[gapminder](https://plotly.github.io/datasets/) dataset available in the 🔗[plotly.express](https://plotly.com/python/plotly-express/) package.")
     expander2 = st.expander("What is a dataset?")
     expander2.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
-    expander3 = st.expander("What is the [gapminder](https://plotly.github.io/datasets/) dataset available in the [plotly.express](https://plotly.com/python/plotly-express/) package?")
-    expander3.write("""This is a data frame with 1,704 observations on 8 variables. This dataset shows population, GDP per capita and life expectancy of 142 countries around the 🌍 from :blue[1952] to :blue[2007]. 
-                \n For more information, please click on what you want to know which stand next to the symbol 🔗""")
     expander4 = st.expander("Who am I?")
     expander4.write("My name is Huỳnh Trần Yến Nhi. I'm a freshman from :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.")
 
@@ -54,7 +51,8 @@ with tab2:
     df = px.data.gapminder()
 
     st.header("📌 Gapminder dataset")
-
+    st.write("""This is a data frame with 1,704 observations on 8 variables. This dataset shows population, GDP per capita and life expectancy of 142 countries around the 🌍 from :blue[1952] to :blue[2007]. 
+                \n For more information, please click on what you want to know which stand next to the symbol 🔗""")
     st.dataframe(df, width = 1000)
 
     st.markdown(
