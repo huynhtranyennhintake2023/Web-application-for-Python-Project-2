@@ -50,8 +50,8 @@ with tab1:
         st.header("Who am I?")
         st.write("My name is Huỳnh Trần Yến Nhi. I'm a freshman from :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.")
 
-    with col2:
-        st.lottie("http://www.fanpop.com/clubs/penguins-of-madagascar/images/37800672/title/hello-photo", key = "hello")
+    #with col2:
+        #st.lottie("http://www.fanpop.com/clubs/penguins-of-madagascar/images/37800672/title/hello-photo", key = "hello")
 
 
 with tab2: 
