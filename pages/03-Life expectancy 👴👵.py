@@ -51,7 +51,7 @@ df = px.data.gapminder()
 st.title(":green[Life expectancy]")
 st.write(":black[On this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.]")
 
-option = st.selectbox('**:black[Please choose one continent:**]',
+option = st.selectbox('**Please choose one continent:',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))
 st.caption(f"You selected: {option}")
 sub3= df[(df["continent"]==option)]
