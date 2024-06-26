@@ -35,6 +35,7 @@ with tab1:
     
     #col1, col2 = st.columns((2))
     #with col1:
+    st.subheader("Self-introduction")
     st.write("""Hi, my name is Huỳnh Trần Yến Nhi. I'm a freshman at :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.
             \n As you can see, I'm the creator of this web application. This web application was made for my Python Project 2 in IT business math class.
             \n For more information, please keep discovering my web app.""")
