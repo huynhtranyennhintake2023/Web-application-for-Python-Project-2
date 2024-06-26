@@ -54,7 +54,7 @@ with tab1:
     expander2 = st.expander("❓Why did I create this web app for my project?")
     expander2.write("""The main requirement for my project is to make a web application with interactive elements for visitors to interact with the graphs I draw with the raw from a dataset.
                     So I chose the :blue[**gapminder dataset**] and made this web app to complete my project.  """)
-    expander3 = st.expander("❓What is :blue[**a dataset**?")
+    expander3 = st.expander("❓What is :blue[**a dataset**]?")
     expander3.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
     
     #st.markdown("---")
