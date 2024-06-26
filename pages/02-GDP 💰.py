@@ -77,4 +77,9 @@ showocean=True, oceancolor="LightBlue")
 \nfig2.update_layout(font_family="Courier New",font = dict (size = 20))
     
 \nst.plotly_chart(fig2, theme = "streamlit", use_container_width=True)''')
-
+st.write("---")
+st.write ("""Huỳnh Trần Yến Nhi 
+          \n Freshman at Vietnamese-German University
+          \n Location: 🏠 Ring road 4, Quarter 4, Thoi Hoa Ward, Ben Cat City, Binh Duong Province
+          \n My Uni website: https://vgu.edu.vn/
+          \n My email: 10623034@student.vgu.edu.vn """)

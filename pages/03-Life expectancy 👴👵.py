@@ -90,3 +90,9 @@ import streamlit as st
                 , width = 900, height = 600 )
 \nfig3.update_layout(font_family="Courier New",font = dict (size = 50))
 \n st.plotly_chart(fig3)''')
+st.write("---")
+st.write ("""Huỳnh Trần Yến Nhi 
+          \n Freshman at Vietnamese-German University
+          \n Location: 🏠 Ring road 4, Quarter 4, Thoi Hoa Ward, Ben Cat City, Binh Duong Province
+          \n My Uni website: https://vgu.edu.vn/
+          \n My email: 10623034@student.vgu.edu.vn """)

@@ -159,5 +159,10 @@ df = px.data.gapminder()
 \n fig1b.update_traces(textfont_size=20,marker=dict( line=dict(color='#000000', width=2)))
 \n fig1b.update_traces(pull=0.05)
 \n st.plotly_chart(fig1b, theme = "streamlit", use_container_width=True)''')
-
+st.write("---")
+st.write ("""Huỳnh Trần Yến Nhi 
+          \n Freshman at Vietnamese-German University
+          \n Location: 🏠 Ring road 4, Quarter 4, Thoi Hoa Ward, Ben Cat City, Binh Duong Province
+          \n My Uni website: https://vgu.edu.vn/
+          \n My email: 10623034@student.vgu.edu.vn """)
 
