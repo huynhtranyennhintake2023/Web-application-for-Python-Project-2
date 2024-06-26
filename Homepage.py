@@ -58,7 +58,7 @@ with tab1:
     expander3 = st.expander("❓What is :blue[**a dataset**]?")
     expander3.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
     expander4 = st.expander("❓What is the :blue[**gapminder dataset**]?")
-    expander4.write("If you want to know more about this dataset, please visit tab named :blue[Gapminder dataset]".)
+    expander4.write("If you want to know more about this dataset, please visit tab named :blue[Gapminder dataset].")
     #st.markdown("---")
 
     #st.header("Who am I?")
