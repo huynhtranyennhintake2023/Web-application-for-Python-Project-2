@@ -25,6 +25,27 @@ background-color: rgba(0,0,0,0);
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
 
+ngr_img ="""
+<style>
+[data-testid="stSidebar"]
+{
+background-image: url("https://cdn.wallpapersafari.com/10/98/LNMmTg.jpeg");
+background-size:cover;
+}
+
+[data-testid="stHeader"]
+{
+background-color: rgba(0,0,0,0);
+}
+
+[data-testid="stSidebar"]
+{
+background-color: rgba(0,0,0,0);
+}
+</style>
+"""
+st.markdown(ngr_img,unsafe_allow_html= True)
+
 df = px.data.gapminder()
 
 st.title(":blue[GDP]")

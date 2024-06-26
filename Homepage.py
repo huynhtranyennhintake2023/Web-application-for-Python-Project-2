@@ -28,7 +28,7 @@ background-color: rgba(0,0,0,0);
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
 
-bgr_img ="""
+ngr_img ="""
 <style>
 [data-testid="stSidebar"]
 {
@@ -47,7 +47,7 @@ background-color: rgba(0,0,0,0);
 }
 </style>
 """
-st.markdown(bgr_img,unsafe_allow_html= True)
+st.markdown(ngr_img,unsafe_allow_html= True)
 
 st.divider()
 
