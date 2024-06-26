@@ -54,7 +54,6 @@ st.write(":black[On this page, users can observe top countries in one continent 
 option = st.selectbox('**:black[Please choose one continent:**]',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))
 st.caption(f"You selected: {option}")
-
 sub3= df[(df["continent"]==option)]
 df3 = sub3.loc[:,['year','lifeExp', 'country']]    
 
