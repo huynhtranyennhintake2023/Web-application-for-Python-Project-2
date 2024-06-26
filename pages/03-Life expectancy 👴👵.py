@@ -52,8 +52,8 @@ st.title(":green[Life expectancy]")
 st.write(":black[On this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.]")
 
 option = st.selectbox('**:black[Please choose one continent:**]',
-(':black[Asia]', ':black[Africa]', ':black[Europe]',':black[Americas]',':black[Oceania]'))
-st.caption(f":black[You selected]: {option}")
+('Asia', 'Africa', 'Europe','Americas','Oceania'))
+st.caption(f"You selected: {option}")
 
 sub3= df[(df["continent"]==option)]
 df3 = sub3.loc[:,['year','lifeExp', 'country']]    
