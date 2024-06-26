@@ -32,7 +32,7 @@ bgr_img ="""
 <style>
 [data-testid="stSidebar"]
 {
-background-image: url("https://th.bing.com/th/id/OIP.JMY19P95m7wMuf0_qKLGtwHaEo?w=305&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+background-image: url("https://cdn.wallpapersafari.com/10/98/LNMmTg.jpeg");
 background-size:cover;
 }
 
