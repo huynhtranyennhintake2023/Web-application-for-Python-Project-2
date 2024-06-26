@@ -49,11 +49,11 @@ st.markdown(ngr_img,unsafe_allow_html= True)
 df = px.data.gapminder()
 
 st.title(":green[Life expectancy]")
-st.write("On this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.")
+st.write(":black[On this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.]")
 
-option = st.selectbox('**Please choose one continent:**',
-('Asia', 'Africa', 'Europe','Americas','Oceania'))
-st.caption(f"You selected: {option}")
+option = st.selectbox('**:black[Please choose one continent:**]',
+(':black[Asia]', ':black[Africa]', ':black[Europe]',':black[Americas]',':black[Oceania]'))
+st.caption(f":black[You selected]: {option}")
 
 sub3= df[(df["continent"]==option)]
 df3 = sub3.loc[:,['year','lifeExp', 'country']]    
