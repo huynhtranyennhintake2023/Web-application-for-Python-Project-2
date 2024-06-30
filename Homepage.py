@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 import datetime
-import streamlit_lottie as st_lottie
+#import streamlit_lottie as st_lottie
 st.set_page_config(page_title="Web application", layout="wide", page_icon="📍")
 st.balloons()
 
@@ -86,8 +86,16 @@ with tab1:
                     So I chose the :blue[**gapminder dataset**] and made this web app to complete my project.  """)
     expander3 = st.expander("❓How could I create this web app?")
     expander3.write("""There are several steps for creating this web app:
-                    \n :blue[**Step 1**]: Choose a dataset you want
-                    \n """)
+                    \n :blue[**Step 1**]: Download Python language and the application for providing coding environment. Here I use [Visual Studio Code](https://code.visualstudio.com/) 
+                    \n :blue[**Step 2**]: Download needed packages. Here I use :blue[streamlit], :blue[plotly.express]
+                    \n :blue[**Step 3**]: Create a basic Streamlit app to be familiar with Python and Streamlit
+                    \n :blue[**Step 4**]: Choose a dataset you want and analyze the dataset to decide what to draw 
+                    \n :blue[**Step 5**]: Use Streamlit and plotly.express to draw
+                    \n :blue[**Step 6**]: Run the web app on your laptop (locally) to see if it works 
+                    \n :blue[**Step 7**]: If all things go well, create a GitHub account and then a Streamlit account. It is important that you connect your Streamlit account to the Github account.  
+                    \n :blue[**Step 8**]: If your app runs smoothly, upload it to Github.
+                    \n :blue[**Step 9**]: Once you are done with Step 4, go to your Streamlit account and click on New app
+                    """)
     expander4 = st.expander("❓What is :blue[**a dataset**]?")
     expander4.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
     expander5 = st.expander("❓What is the :blue[**gapminder dataset**]?")
