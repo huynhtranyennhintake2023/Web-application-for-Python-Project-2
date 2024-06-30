@@ -92,7 +92,7 @@ with tab1:
                     \n :blue[**Step 4**]: Choose a dataset you want and analyze the dataset to decide what to draw 
                     \n :blue[**Step 5**]: Use Streamlit and plotly.express to draw
                     \n :blue[**Step 6**]: Run the web app on your laptop (locally) to see if it works 
-                    \n :blue[**Step 7**]: If all things go well, create a GitHub account and then a Streamlit account. It is important that you connect your Streamlit account to the Github account.  
+                    \n :blue[**Step 7**]: If all things go well, create a [GitHub](https://github.com/) account and then a [Streamlit](https://streamlit.io/) account. It is important that you connect your Streamlit account to the Github account.  
                     \n :blue[**Step 8**]: If your app runs smoothly, upload it to Github.
                     \n :blue[**Step 9**]: Once you are done with Step 8, go to your Streamlit account and click on New app
                     """)
