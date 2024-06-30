@@ -25,31 +25,10 @@ background-color: rgba(0,0,0,0);
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
 
-ngr_img ="""
-<style>
-[data-testid="stSidebar"]
-{
-background-image: url("https://cdn.wallpapersafari.com/10/98/LNMmTg.jpeg");
-background-size:cover;
-}
-
-[data-testid="stHeader"]
-{
-background-color: rgba(0,0,0,0);
-}
-
-[data-testid="stSidebar"]
-{
-background-color: rgba(0,0,0,0);
-}
-</style>
-"""
-st.markdown(ngr_img,unsafe_allow_html= True)
-
 df = px.data.gapminder()
 
 st.title(":blue[GDP]")
-st.write("On this page, users can see changes of each country GDP during the period from 1952 to 2007 by adjusting the slider or clicking on the button ▶️.")
+st.write("**The global economy has experienced significant growth over the past several decades, as evidenced by the steady rise in world GDP from 1952 to 2007. This remarkable trend can be attributed to a number of factors, including population growth, technological advancements, and the expansion of international trade. The graph depicting world GDP during this period paints a clear picture of the world's economic progress. It shows a consistent upward trajectory, with GDP increasing from a relatively modest level in the early 1950s to a much more substantial figure by the mid-2000s. This growth reflects the increasing productivity and prosperity of nations around the globe, as they have harnessed their resources and human capital to drive economic development. While there have been some fluctuations and periods of slower growth along the way, the overall trend is undeniable. The world's population has also expanded significantly during this time, further contributing to the expansion of economic activity and the demand for goods and services. As more people have entered the global workforce and consumer markets, the opportunities for economic growth have multiplied. Ultimately, the data on world GDP from 1952 to 2007 serves as a powerful testament to the resilience and adaptability of the global economy. It demonstrates the remarkable progress that can be achieved through the collective efforts of nations, businesses, and individuals working towards a more prosperous future.**")
 
 st.markdown("---")
 

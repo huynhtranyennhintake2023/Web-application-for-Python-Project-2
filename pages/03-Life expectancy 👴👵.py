@@ -25,31 +25,11 @@ background-color: rgba(0,0,0,0);
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
 
-ngr_img ="""
-<style>
-[data-testid="stSidebar"]
-{
-background-image: url("https://cdn.wallpapersafari.com/10/98/LNMmTg.jpeg");
-background-size:cover;
-}
-
-[data-testid="stHeader"]
-{
-background-color: rgba(0,0,0,0);
-}
-
-[data-testid="stSidebar"]
-{
-background-color: rgba(0,0,0,0);
-}
-</style>
-"""
-st.markdown(ngr_img,unsafe_allow_html= True)
 
 df = px.data.gapminder()
 
 st.title(":green[Life expectancy]")
-st.write(":black[On this page, users can observe top countries in one continent having the highest life expectancy rates in the year 2007.]")
+st.write("**The graph depicting life expectancy from 1952 to 2007 provides a compelling case for the significant advancements in economic and social development during this period. The steady increase in life expectancy across the globe is a testament to the remarkable progress achieved in areas such as healthcare, nutrition, and overall standard of living. The data showcases how countries have been able to invest in the well-being of their citizens, leading to improved access to medical services, better sanitation, and enhanced living conditions. This, in turn, has translated into longer lifespans and a higher quality of life for populations around the world. The upward trend in life expectancy is a clear indicator of the positive impact of economic growth and social policies implemented during this time frame. As nations continue to prioritize the health and welfare of their people, we can expect to see further improvements in life expectancy in the years to come.**")
 
 option = st.selectbox('Please choose one continent:',
 ('Asia', 'Africa', 'Europe','Americas','Oceania'))

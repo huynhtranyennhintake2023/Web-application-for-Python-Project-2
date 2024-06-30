@@ -45,7 +45,12 @@ background-color: rgba(0,0,0,0);
 {
 background-color: rgba(0,0,0,0);
 }
+
 </style>
+
+"""
+gif = """
+<iframe src="https://giphy.com/embed/AduQoFjjHQPb8dW2MG" width="280" height="280" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/mintostudio-rabbit-character-usagyuuun-AduQoFjjHQPb8dW2MG"></p>
 """
 st.markdown(ngr_img,unsafe_allow_html= True)
 
@@ -55,15 +60,17 @@ tab1, tab2 = st.tabs(["Introduction", "Gapminder dataset"])
 
 with tab1:
     
-    #col1, col2 = st.columns((2))
-    #with col1:
-    st.subheader("Self-introduction")
-    st.write("""Hi, my name is Huỳnh Trần Yến Nhi. I'm a freshman at :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.
+    col1, col2 = st.columns([3,1])
+    with col1:
+        st.subheader("Self-introduction")
+        st.write("""Hi, my name is Huỳnh Trần Yến Nhi. I'm a freshman at :orange[**Vietnamese-German University**]. My major is Business Administration or Betriebswirtschaftslehre in German, intake 2023.
             \n As you can see, I'm the creator of this web application. This web application was made for my Python Project 2 in IT business math class.
             \n For more information, please keep discovering my web app.""")
 
-    #with col2:
-        #st.lottie("https://lottie.host/2b00fde3-db2c-406c-a19f-a53c0a8eef95/X4M0fAvvb9.json")
+    with col2:
+        st.markdown(gif,unsafe_allow_html= True)
+        
+        
 
     st.markdown("---")
     #st.header("What is :blue[**a web application**]❓")

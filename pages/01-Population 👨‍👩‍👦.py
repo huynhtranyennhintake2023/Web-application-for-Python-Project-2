@@ -22,31 +22,15 @@ background-color: rgba(0,0,0,0);
 """
 st.markdown(bgr_img,unsafe_allow_html= True)
 
-ngr_img ="""
-<style>
-[data-testid="stSidebar"]
-{
-background-image: url("https://cdn.wallpapersafari.com/10/98/LNMmTg.jpeg");
-background-size:cover;
-}
 
-[data-testid="stHeader"]
-{
-background-color: rgba(0,0,0,0);
-}
-
-[data-testid="stSidebar"]
-{
-background-color: rgba(0,0,0,0);
-}
-</style>
-"""
-st.markdown(ngr_img,unsafe_allow_html= True)
 
 df = px.data.gapminder()
 
 st.title(":red[Population]")
-st.write("On this page, users can see each country population in 1 continent in the bar chart.")
+st.write("""The world population has undergone a remarkable transformation over the past several decades, with profound implications for the global economy and society. A closer examination of the population trends from 1952 to 2007 reveals a striking picture of exponential growth that demands our attention. 
+         \n In 1952, the global population stood at a relatively modest 2.6 billion people. However, over the next 55 years, this figure skyrocketed, reaching an astounding 6.7 billion by 2007. This rapid expansion has had a profound impact on resource allocation, economic development, and the overall well-being of communities worldwide. 
+         \n The implications of this population explosion are multifaceted and complex. Policymakers, economists, and social scientists must grapple with the challenges posed by this unprecedented growth, from the strain on infrastructure and public services to the need for sustainable development and equitable distribution of resources. Understanding the dynamics of this population shift is crucial in shaping the future of our global community.
+         \n The bar chart below depicts each country population in a continent in each year recorded.""")
 
 
 st.markdown("---")
