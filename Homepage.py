@@ -77,10 +77,13 @@ with tab1:
     expander2 = st.expander("❓Why did I create this web app?")
     expander2.write("""The main requirement for my Python Project 2 in IT business math class is to make a web application with interactive elements for visitors to interact with the graphs I draw with the raw from a dataset.
                     So I chose the :blue[**gapminder dataset**] and made this web app to complete my project.  """)
-    expander3 = st.expander("❓What is :blue[**a dataset**]?")
-    expander3.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
-    expander4 = st.expander("❓What is the :blue[**gapminder dataset**]?")
-    expander4.write("If you want to know more about this dataset, please visit the tab named :blue[Gapminder dataset].")
+    expander3 = st.expander("❓How could I create this web app?")
+    expander3.write("""There are several steps for creating this web app:
+                    \n First: """)
+    expander4 = st.expander("❓What is :blue[**a dataset**]?")
+    expander4.write("A dataset is a collection of data with which developers can work to meet their goals. In a dataset, the rows represent the number of data points and the columns represent the features of the Dataset. They are mostly used in fields like machine learning, business, and government to gain insights, make informed decisions, or train algorithms. Datasets may vary in size and complexity and they mostly require cleaning and preprocessing to ensure data quality and suitability for analysis or modeling.")
+    expander5 = st.expander("❓What is the :blue[**gapminder dataset**]?")
+    expander5.write("If you want to know more about this dataset, please visit the tab named :blue[Gapminder dataset].")
     #st.markdown("---")
 
     #st.header("Who am I?")
