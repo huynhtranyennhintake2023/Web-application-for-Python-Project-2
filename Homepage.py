@@ -89,7 +89,7 @@ with tab1:
                     \n :blue[**Step 1**]: Download Python language and the application for providing coding environment. Here I use [Visual Studio Code](https://code.visualstudio.com/) 
                     \n :blue[**Step 2**]: Download needed packages. Here I mainly use [streamlit](https://streamlit.io/), [plotly.express](https://plotly.com/python/plotly-express/)
                     \n :blue[**Step 3**]: Create a basic Streamlit app to be familiar with Python and Streamlit
-                    \n :blue[**Step 4**]: Choose a dataset you want and analyze the dataset to decide what to draw 
+                    \n :blue[**Step 4**]: Choose a dataset you want and analyze the dataset to decide what to draw, here I choose [gapminder](https://plotly.github.io/datasets/) dataset
                     \n :blue[**Step 5**]: Use Streamlit and plotly.express to draw
                     \n :blue[**Step 6**]: Run the web app on your laptop (locally) to see if it works 
                     \n :blue[**Step 7**]: If all things go well, create a [GitHub](https://github.com/) account and then a [Streamlit](https://streamlit.io/) account. It is important that you connect your Streamlit account to the Github account.  
